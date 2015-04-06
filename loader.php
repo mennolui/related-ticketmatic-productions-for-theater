@@ -24,7 +24,8 @@ $wpt_related_tm_version = '0.1.0';
 function wpt_related_tm_loader() {
 	global $wp_theatre;
 	
-	if (isset($wp_theatre->ticketmatic) && isset($wp_theatre->related)) {
+	// @todo: correctly check for rewuired plugins
+	if (1 || isset($wp_theatre->ticketmatic) && isset($wp_theatre->related)) {
 
 		require_once(dirname(__FILE__) . '/includes/wpt_related_tm.php');	
 	
